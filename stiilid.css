@@ -1,0 +1,189 @@
+html, body {
+  height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #0C0C0D;
+}
+
+/*NAVIGATION MENU*/
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 478px;
+    height: 385px;
+    z-index: 1000;
+    overflow: visible;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 478px;
+    height: 385px;
+}
+
+/*home menu button*/
+.home-menu-item {
+    position: absolute;
+    top: 156px;
+    width: 132px;
+    height: 72px;
+}
+
+.home-menu-box {
+    width: 132px;
+    height: 72px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.home-menu-rect {
+    width: 54px;
+    height: 72px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
+}
+
+/*contact menu button*/
+.contacts-menu-item {
+    position: absolute;
+    left: 198px;
+    top: 0px;
+    width: 116px;
+    height: 122px;
+}
+
+.contacts-menu-box {
+    width: 116px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.contacts-menu-rect {
+    width: 116px;
+    height: 72px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
+}
+
+/*work menu button*/
+.works-menu-item {
+    position: absolute;
+    top: 152px;
+    left: 393px;
+    width: 85px;
+    height: 122px;
+}
+
+.works-menu-box {
+    width: 85px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.works-menu-rect {
+    width: 85px;
+    height: 72px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
+}
+
+/*about menu button*/
+.about-menu-item {
+    position: absolute;
+    top: 259px;
+    left: 198px;
+    width: 116px;
+    height: 126px;
+}
+
+.about-menu-box {
+    width: 116px;
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.about-menu-rect {
+    width: 55px;
+    height: 76px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
+}
+
+.menu-text {
+    font-family: "Source Code Pro";
+    font-weight: 400;
+    size: 24px;
+    color: #e7e7e7;
+}
+
+/* MAIN CONTENT */
+
+#home {
+    width: 100%;              
+    height: 692px;                   
+    margin: 0 auto;           
+    
+    background: radial-gradient(
+        50% 50% at 50% 50%, 
+        #4E19EB 0%, 
+        #0C0C0D 100%
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.opingud {
+    width: 100%; 
+    height: 1922px;
+    margin: 0 auto; 
+    background: radial-gradient(50% 50% at 50% 50%, #A9F8C3 0%, #00C8CC 50.48%, #DAD4EB 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#works {
+    width: 100%;
+    height: 7488px;
+    margin: 0 auto;
+    background: #111110;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about {
+    width: 100%;
+    height: 2735px;
+    margin: 0 auto;
+    background: rgba(232, 227, 227, 0.99);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
