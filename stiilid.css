@@ -147,7 +147,7 @@ header {
 
 #home {
     width: 100%;              
-    height: 692px;                   
+    height: 740px;                   
     margin: 0 auto;           
     
     background: radial-gradient(
@@ -290,22 +290,33 @@ header {
 
 .about-content {
     display: flex;
-    align-items: center;
     width: 60%;
     flex-direction: row;
     justify-content: center;
-    padding: 5rem 0 5rem 0;
+    margin: 5rem 0 15rem 0;
 }
 
 .about-body-text {
     display: flex;
     flex: 7;
+    height: inherit;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     font-family: "JetBrains Mono";
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 200;
-    line-height: normal;
+    letter-spacing: 2%;
+}
+
+.about-body-text-1 {
+    line-height: 200%;
+    flex: 1;
+    
+}
+
+.about-body-text-2 {
+    line-height: 200%;
+    flex: 1;
 }
 
 .myself {
@@ -341,8 +352,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 642px;
-    border-top: 3px solid #F00;
+    height: 740px;
     background: radial-gradient(112.94% 112.94% at 50% 50%, rgba(255, 255, 255, 0.90) 0%, rgba(243, 237, 148, 0.99) 13.7%, #F00 37.59%, rgba(0, 0, 0, 0.90) 53.91%);
 }
 
