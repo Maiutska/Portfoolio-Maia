@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: 'Caprice';
+    src: url('caprice.medium.ttf');
+}
+
 html, body {
   height: 100%;
   font-size: 16px;
@@ -158,6 +164,29 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10rem;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 146px;
+}
+
+.home-text-1 {
+    font-size: 4rem;
+    font-family: 'Caprice';
+    color: #FFF;
+}
+
+.home-text-2 {
+    font-size: 16px;
+    font-family: "JetBrains Mono";
+    color: #FFF;
 }
 
 .opingud {
@@ -262,11 +291,12 @@ header {
 
 #works {
     width: 100%;
-    height: 7488px;
+    height: 120rem;
     margin: 0 auto;
-    background: #111110;
+    background-image: url('pildid/forest.png');
     background-size: cover;
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -349,11 +379,72 @@ header {
 }
 
 #contacts {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 740px;
+    height: 30rem;
     background: radial-gradient(112.94% 112.94% at 50% 50%, rgba(255, 255, 255, 0.90) 0%, rgba(243, 237, 148, 0.99) 13.7%, #F00 37.59%, rgba(0, 0, 0, 0.90) 53.91%);
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.contacts-heading {
+    font-family: 'Caprice';
+    font-size: 64px;
+}
+
+.socials-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.email {
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+}
+
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+
+.Instagram-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    font-family: "JetBrains Mono";
+    gap: 16px;
+}
+
+.Linkedin-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    font-family: "JetBrains Mono";
+    gap: 16px;
 }
 
 .dark-text {
