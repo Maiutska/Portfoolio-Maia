@@ -174,13 +174,22 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 146px;
+    gap: 2rem;
 }
 
 .home-text-1 {
-    font-size: 4rem;
+    font-size: 64px;
     font-family: 'Caprice';
     color: #FFF;
+    line-height: 150%;
+    letter-spacing: 2%;
+}
+
+.home-img {
+    background-image: url('pildid/Vector.svg');
+    background-size: cover;
+    width: 120px;
+    height: 120px;
 }
 
 .home-text-2 {
