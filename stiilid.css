@@ -139,8 +139,10 @@ header {
 }
 
 .menu-text {
-    font-family: "Source Code Pro";
-    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 150%;
+    letter-spacing: 2%;
+    font-weight: 100;
     color: #e7e7e7;
     transition: color 0.1s ease;
 }
@@ -155,34 +157,29 @@ header {
     width: 100%;              
     height: 740px;                   
     margin: 0 auto;           
-    
-    background: radial-gradient(
-        50% 50% at 50% 50%, 
-        #4E19EB 0%, 
-        #0C0C0D 100%
-    );
+    background: #0C0C0D;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-left: 10rem;
+    justify-content: center;
 }
 
 .home-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem;
+    align-items: center;
+    gap: 3rem;
 }
 
 .home-text-1 {
-    font-size: 64px;
-    font-family: 'Caprice';
-    color: #FFF;
+    font-size: 18px;
+    font-family:'Caprice';
+    color: #d6d6d6;
     line-height: 150%;
     letter-spacing: 2%;
+    text-align: center;
 }
 
 .home-img {
@@ -193,16 +190,47 @@ header {
 }
 
 .home-text-2 {
-    font-size: 16px;
-    font-family: "JetBrains Mono";
+    font-size: 32px;
+    font-family:'Times New Roman', Times, serif;
     color: #FFF;
+    text-align: center;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 2%;
+}
+
+.home-text-3 {
+    font-size: 24px;
+    font-family:'Times New Roman', Times, serif;
+    color: #e7e7e7;
+    text-align: center;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 2%;
+}
+
+.section-gradient {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+        to bottom,
+        #0C0C0D 0%,
+        #1b0b3f 10%,  
+        #2A0F7A 20%,
+        #3c14b8 30%,   
+        #4E19EB 40%,
+        #2f6fd1 55%,   
+        #00C8CC 70%,
+        #8fdfe0 85%,  
+        #DAD4EB 100%
+    );
 }
 
 .opingud {
     width: 100%; 
     height: 1922px;
     margin: 0 auto; 
-    background: radial-gradient(50% 50% at 50% 50%, #A9F8C3 0%, #00C8CC 50.48%, #DAD4EB 100%);
+    background: #DAD4EB;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -300,9 +328,9 @@ header {
 
 #works {
     width: 100%;
-    height: 120rem;
+    height: 50rem;
     margin: 0 auto;
-    background-image: url('pildid/forest.png');
+    background-color: #DAD4EB;
     background-size: cover;
     background-position: center;
     background-size: 100%;
@@ -393,7 +421,8 @@ header {
     align-items: center;
     width: 100%;
     height: 30rem;
-    background: radial-gradient(112.94% 112.94% at 50% 50%, rgba(255, 255, 255, 0.90) 0%, rgba(243, 237, 148, 0.99) 13.7%, #F00 37.59%, rgba(0, 0, 0, 0.90) 53.91%);
+    background: #0C0C0D;
+    color: #e7e7e7;
 }
 
 .contacts-content {
@@ -416,8 +445,8 @@ header {
 }
 
 .email {
-    font-family: "JetBrains Mono";
-    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 2%;
 }
@@ -437,10 +466,10 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 2%;
-    font-family: "JetBrains Mono";
+    font-family:'Times New Roman', Times, serif;
     gap: 16px;
 }
 
@@ -449,10 +478,10 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 2%;
-    font-family: "JetBrains Mono";
+    font-family:'Times New Roman', Times, serif;
     gap: 16px;
 }
 
