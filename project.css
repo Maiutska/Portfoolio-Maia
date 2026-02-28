@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  font-size: 16px;
+  position: sticky;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #0C0C0D;
+  color: white;
+}
+
+.before-img {
+    width: 60rem;
+    height: auto;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+}
+
+.graphics {
+    width: 30rem;
+    height: auto;
+    border-radius: 16px;
+}

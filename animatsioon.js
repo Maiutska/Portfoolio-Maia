@@ -4,8 +4,8 @@ const menuHeight = 385; // height of your fixed header
 // Define sections and their desired menu text color
 const sections = [
   { el: document.querySelector("#home"), color: "light" },
-  { el: document.querySelector(".opingud"), color: "dark" },
-  { el: document.querySelector(".#works"), color: "dark" },
+  { el: document.querySelector("#opingud"), color: "dark" },
+  { el: document.querySelector("#works"), color: "dark" },
   { el: document.querySelector("#about"), color: "dark" },
   { el: document.querySelector("#contacts"), color: "dark" },
 ];
@@ -37,6 +37,7 @@ const menuTexts = document.querySelectorAll('.menu-text');
 
 const intersectionObserver = new IntersectionObserver((entries) => {
   if (entries[0].intersectionRatio <= 0) {
+    console.log('section', entries[0]);
     menuTexts.forEach((text) => {
       text.classList.remove('dark-text');
     })
