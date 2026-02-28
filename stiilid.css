@@ -16,6 +16,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #0C0C0D;
+  font-family: "Source Code Pro", monospace;
 }
 
 /*NAVIGATION MENU*/
@@ -142,7 +143,7 @@ header {
 }
 
 .menu-text {
-    font-family:'Times New Roman', Times, serif;
+    font-family:"Source Code Pro", monospace;
     line-height: 150%;
     letter-spacing: 2%;
     font-weight: 100;
@@ -194,7 +195,7 @@ header {
 
 .home-text-2 {
     font-size: 32px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Source Code Pro", monospace;
     color: #FFF;
     text-align: center;
     font-weight: 500;
@@ -204,7 +205,7 @@ header {
 
 .home-text-3 {
     font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Source Code Pro", monospace;
     color: #e7e7e7;
     text-align: center;
     font-weight: 300;
@@ -229,133 +230,45 @@ header {
     );
 }
 
-.opingud {
-    width: 100%; 
-    height: 1922px;
-    margin: 0 auto; 
-    background: #DAD4EB;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.mull {
-    width: 417px;
-    height: 252px;
-    position: absolute;
-    border-radius: 50%;
-    background: #E4E4E4;
-    margin-top: 193px;
-    margin-left: 145px;
-
-    /*text mull*/
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    letter-spacing: 2%;
-    line-height: 150%;
-}
-
-
-.mull2 {
-    width: 580px;
-    height: 239px;
-    position: absolute;
-    border-radius: 50%;
-    background: #E4E4E4;
-    margin-top: 573px;
-    margin-left: 402px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.text-box-mull2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    line-height: 1.5;
-    font-weight: 400;
-    width: 60%;
-    height: auto;
-}
-
-.mull3 {
-    width: 500px;
-    height: 193px;
-    position: absolute;
-    border-radius: 50%;
-    background: #E4E4E4;
-    margin-top: 1003px;
-    margin-left: 93px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.text-box-mull3 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    line-height: 1.5;
-    font-weight: 400;
-    width: 60%;
-    height: auto;
-}
-
-.mull4 {
-    width: 623px;
-    height: 239px;
-    position: absolute;
-    border-radius: 50%;
-    background: #E4E4E4;
-    margin-top: 1400px;
-    margin-left: 350px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.text-box-mull4 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    line-height: 1.5;
-    font-weight: 400;
-    width: 60%;
-    height: auto;
-}
-
-#works {
+    #works {
     width: 100%;
-    height: 100rem;
+    background: #DAD4EB;
+    background-repeat: repeat;
+    padding: 35rem 0;
+}
+
+
+   .works-wrapper {
+    max-width: 1000px;
     margin: 0 auto;
-    background-color: #DAD4EB;
-    background-size: cover;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    padding: 0 2rem;
+}
+
+.works-heading {
+    font-family: "Source Code Pro", monospace;
+    font-size: 32px;
+    margin-bottom: 6rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
 }
 
 .works-content-layout {
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr)); /* two equal columns */
-  gap: 2rem;                             /* spacing between items */
-  padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4rem;
 }
 
 
 .project-container {
-  width: 320px;
+  width: 100%;             
+  max-width: 350px;         
+  margin: 0 auto;           
   overflow: hidden;
   background: black;
   color: white;
   text-decoration: none;
-  transition:  0.3s ease;
+  transition: 0.3s ease;
   display: block; 
 }
 
@@ -542,5 +455,7 @@ header {
 .dark-text {
     color: black;
 }
+
+
 
 

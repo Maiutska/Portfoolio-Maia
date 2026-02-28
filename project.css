@@ -1,27 +1,184 @@
-html, body {
-  height: 100%;
-  font-size: 16px;
-  position: sticky;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+html,
+body {
   margin: 0;
   padding: 0;
-  background-color: #0C0C0D;
-  color: white;
+  height: 100%;
+  font-size: 18px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-image: url('pildid/undefined\ -\ Imgur.gif');
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.case-layout {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+
+.case-card {
+  position: relative;
+  max-width: 880px;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 0;
+  padding: 3.5rem 3rem 2.75rem;
+  border: 1px solid #3a3a3a;
+  white-space: normal;
+  color: #e5e5e5;
+  text-align: left;
+  overflow: hidden;
+}
+
+.case-card::before {
+  content: none;
+}
+
+.case-header {
+  position: relative;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2.1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  font-family: "Source Code Pro", monospace;
+}
+
+.lead {
+  max-width: 52rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 2%;
+  color: #d0d0d0;
+}
+
+.case-section {
+  margin: 5rem auto 0;
+  max-width: 52rem;
+}
+
+.case-section > * + * {
+  margin-top: 1rem;
+}
+
+.case-section p + h3 {
+  margin-top: 0.6rem;
+}
+
+.skills-heading {
+  margin-top: 8rem;
+}
+
+.case-section:last-of-type {
+  margin-top: 1.25rem;
+}
+
+.case-section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: #f5f5f5;
+  font-family: "Source Code Pro", monospace;
+}
+
+.case-section p {
+  margin: 0.4rem auto 0;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 2%;
+  color: #d0d0d0;
+}
+
+.case-section ul {
+  list-style: disc;
+  padding: 0;
+  margin: 0.4rem auto 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.case-section li {
+  font-size: 1rem;
+  padding: 0.15rem 0;
+  line-height: 150%;
+  letter-spacing: 2%;
+  color: #e5e5e5;
+}
+
+.before-img,
+.logo {
+  display: block;
+  margin: 2.2rem auto 1.2rem;
 }
 
 .before-img {
-    width: 60rem;
-    height: auto;
+  width: min(60rem, 100%);
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid #444444;
 }
 
 .logo {
-    width: 10rem;
-    height: auto;
+  width: 10rem;
+  height: auto;
 }
 
-.graphics {
-    width: 30rem;
-    height: auto;
-    border-radius: 16px;
+.back-button {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 0;
+  border: 2px outset #555555;
+  background: #2a2a2a;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: none;
+}
+
+.back-button:hover {
+  background: #383838;
+}
+
+.back-button:active {
+  background: #1f1f1f;
+}
+
+@media (max-width: 768px) {
+  .case-card {
+    padding: 2.75rem 1.75rem 2.3rem;
+    border-radius: 4px;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+  }
+
+  .lead,
+  .case-section p {
+    font-size: 0.86rem;
+  }
+
+  .before-img {
+    border-radius: 2px;
+  }
+
+  .back-button {
+    top: 1.4rem;
+    left: 1.4rem;
+  }
 }
