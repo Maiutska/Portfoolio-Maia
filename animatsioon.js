@@ -4,7 +4,6 @@ const menuHeight = 385; // height of your fixed header
 // Define sections and their desired menu text color
 const sections = [
   { el: document.querySelector("#home"), color: "light" },
-  { el: document.querySelector("#opingud"), color: "dark" },
   { el: document.querySelector("#works"), color: "dark" },
   { el: document.querySelector("#about"), color: "dark" },
   { el: document.querySelector("#contacts"), color: "dark" },
