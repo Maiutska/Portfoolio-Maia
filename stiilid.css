@@ -17,6 +17,14 @@ html, body {
   font-family: "Jetbrains Mono";
 }
 
+.social-link,
+.social-link:visited,
+.social-link:hover,
+.social-link:active {
+    color: inherit;        
+    text-decoration: none; 
+}
+
 /*NAVIGATION MENU*/
 
 a {
