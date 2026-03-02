@@ -6,7 +6,7 @@ body {
   font-size: 18px;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-image: url('pildid/undefined\ -\ Imgur.gif');
+  background-color: #111010;
   color: #000000;
   font-family: "Times New Roman", Times, serif;
 }
@@ -117,7 +117,8 @@ h1 {
 }
 
 .before-img,
-.logo {
+.logo,
+.before-img2  {
   display: block;
   margin: 2.2rem auto 1.2rem;
 }
@@ -129,6 +130,13 @@ h1 {
   border: 1px solid #444444;
 }
 
+.before-img2 {
+  width: min(60rem, 100%);
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid #444444;
+}
+
 .logo {
   width: 10rem;
   height: auto;
@@ -136,6 +144,7 @@ h1 {
 
 .back-button {
   position: fixed;
+  text-decoration: none;
   top: 1.5rem;
   left: 1.5rem;
   padding: 0.35rem 0.85rem;
@@ -144,7 +153,7 @@ h1 {
   background: #2a2a2a;
   color: #e8e8e8;
   font-size: 0.9rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Jetbrains Mono';
   cursor: pointer;
   z-index: 1000;
   box-shadow: none;

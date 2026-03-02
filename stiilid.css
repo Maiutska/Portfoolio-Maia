@@ -5,8 +5,6 @@
 }
 
 
-
-
 html, body {
   height: 100%;
   font-size: 16px;
@@ -16,7 +14,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #0C0C0D;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Jetbrains Mono";
 }
 
 /*NAVIGATION MENU*/
@@ -143,7 +141,7 @@ header {
 }
 
 .menu-text {
-    font-family:"Source Code Pro", monospace;
+    font-family: "Jetbrains Mono";
     line-height: 150%;
     letter-spacing: 2%;
     font-weight: 100;
@@ -154,6 +152,20 @@ header {
 .menu.menu-light .menu-text {
     color: #000522;
 }
+
+.dark-text {
+    color: black;
+}
+
+/* Default desktop view */
+.desktop-menu {
+  display: flex; /* visible on desktop */
+}
+
+.mobile-menu, .hamburger {
+  display: none; /* hidden on desktop */
+}
+
 
 /* MAIN CONTENT */
 
@@ -179,7 +191,7 @@ header {
 
 .home-text-1 {
     font-size: 18px;
-    font-family:'Caprice';
+    font-family: "Jetbrains Mono";
     color: #d6d6d6;
     line-height: 150%;
     letter-spacing: 2%;
@@ -187,15 +199,17 @@ header {
 }
 
 .home-img {
-    background-image: url('pildid/Vector.svg');
-    background-size: cover;
-    width: 120px;
-    height: 120px;
+    background-image: url('pildid/IMG_1524.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10rem;
+    height: 10rem;
 }
 
 .home-text-2 {
-    font-size: 32px;
-    font-family: "Source Code Pro", monospace;
+    font-size: 24px;
+    font-family: "Jetbrains Mono";
     color: #FFF;
     text-align: center;
     font-weight: 500;
@@ -204,8 +218,8 @@ header {
 }
 
 .home-text-3 {
-    font-size: 24px;
-    font-family: "Source Code Pro", monospace;
+    font-size: 18px;
+    font-family: "Jetbrains Mono";
     color: #e7e7e7;
     text-align: center;
     font-weight: 300;
@@ -234,7 +248,7 @@ header {
     width: 100%;
     background: #DAD4EB;
     background-repeat: repeat;
-    padding: 35rem 0;
+    padding: 16rem 0;
 }
 
 
@@ -245,8 +259,8 @@ header {
 }
 
 .works-heading {
-    font-family: "Source Code Pro", monospace;
-    font-size: 32px;
+    font-family: "Jetbrains Mono";
+    font-size: 24px;
     margin-bottom: 6rem;
     font-weight: 700;
     color: #000000;
@@ -299,7 +313,7 @@ header {
 }
 
 .project-content h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
@@ -315,30 +329,29 @@ header {
     background-repeat: no-repeat;
 }
 
-.about-pictures {
-    width: 20%;
-    flex: 3;
-}
-
 .about-content {
     display: flex;
-    width: 60%;
-    flex-direction: row;
+    flex-direction: row;      
     justify-content: center;
-    margin: 5rem 0 15rem 0;
+    align-items: flex-start;
+    gap: 8rem;                
+    width: 60%;
+    margin: 15rem auto 25rem auto;
+    flex-wrap: nowrap;        
+}
+
+.about-pictures {
+    flex: 0 0 auto;           
 }
 
 .about-body-text {
     display: flex;
-    flex: 7;
-    height: inherit;
-    justify-content: center;
     flex-direction: column;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 18px;
-    font-weight: 200;
-    
+    justify-content: flex-start;
+    gap: 3rem;               
+    flex: 1 1 auto;          
 }
+
 
 .about-body-text-1 {
     line-height: 200%;
@@ -348,6 +361,12 @@ header {
 }
 
 .about-body-text-2 {
+    line-height: 200%;
+    flex: 1;
+    letter-spacing: 2%;
+}
+
+.about-body-text-3 {
     line-height: 200%;
     flex: 1;
     letter-spacing: 2%;
@@ -388,7 +407,7 @@ header {
     align-items: center;
     width: 100%;
     height: 30rem;
-    background: #0C0C0D;
+    background-image: url('pildid/starry\ sky.gif');
     color: #e7e7e7;
 }
 
@@ -412,7 +431,7 @@ header {
 }
 
 .email {
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Jetbrains Mono";
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 2%;
@@ -436,7 +455,7 @@ header {
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 2%;
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Jetbrains Mono";
     gap: 16px;
 }
 
@@ -448,14 +467,111 @@ header {
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 2%;
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Jetbrains Mono";
     gap: 16px;
 }
 
-.dark-text {
-    color: black;
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center; 
+    padding: 1rem;
+    z-index: 1100;
+  }
+
+  
+  .menu,
+  .hamburger,
+  .mobile-menu {
+    display: none;
+  }
+
+  
+  #home, #works, #about, #contacts {
+    padding: 4rem 1rem;
+    text-align: center; 
+  }
+
+  #home {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .home-img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .home-text-1 {
+    font-size: 16px;
+  }
+
+  .home-text-2 {
+    font-size: 20px;
+  }
+
+  .home-text-3 {
+    font-size: 16px;
+  }
+
+  
+  .works-content-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 2rem;
+    text-align: center; 
+  }
+
+  .about-pictures, .about-body-text {
+    width: 100%;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+  }
+
+  
+  #contacts {
+    height: auto;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+
+  .contacts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .email {
+    text-align: center;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .Instagram-box, .Linkedin-box {
+    justify-content: center;
+    text-align: center;
+  }
 }
-
-
-
-

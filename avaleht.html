@@ -11,35 +11,53 @@
 
 <body>
     <header>
-       <nav class="menu">
-            <a href="#home" class="home-menu-item">
-                <div class="home-menu-box">
-                    <div class="home-menu-rect"></div>
-                    <span class="menu-text">Home</span>
-                </div>
-            </a>
 
-            <a href="#contacts" class="contacts-menu-item">
-                <div class="contacts-menu-box">
-                    <div class="contacts-menu-rect"></div>
-                    <span class="menu-text">Contacts</span>
-                </div>
-            </a>
+  <!-- Hamburger button (mobile only) -->
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-            <a href="#works" class="works-menu-item">
-                <div class="works-menu-box">
-                    <div class="works-menu-rect"></div>
-                    <span class="menu-text">Works</span>
-                </div>
-            </a>
+  <!-- Desktop menu -->
+  <nav class="menu desktop-menu">
+    <a href="#home" class="home-menu-item">
+      <div class="home-menu-box">
+        <div class="home-menu-rect"></div>
+        <span class="menu-text">Home</span>
+      </div>
+    </a>
 
-             <a href="#about" class="about-menu-item">
-                <div class="about-menu-box">
-                    <div class="about-menu-rect"></div>
-                    <span class="menu-text">About Me</span>
-                </div>
-            </a>
-       </nav>
+    <a href="#contacts" class="contacts-menu-item">
+      <div class="contacts-menu-box">
+        <div class="contacts-menu-rect"></div>
+        <span class="menu-text">Contacts</span>
+      </div>
+    </a>
+
+    <a href="#works" class="works-menu-item">
+      <div class="works-menu-box">
+        <div class="works-menu-rect"></div>
+        <span class="menu-text">Works</span>
+      </div>
+    </a>
+
+    <a href="#about" class="about-menu-item">
+      <div class="about-menu-box">
+        <div class="about-menu-rect"></div>
+        <span class="menu-text">About Me</span>
+      </div>
+    </a>
+  </nav>
+
+  <!-- Mobile menu (hidden by default, slides in) -->
+  <nav class="menu mobile-menu">
+    <a href="#home" class="menu-item">Home</a>
+    <a href="#works" class="menu-item">Works</a>
+    <a href="#about" class="menu-item">About Me</a>
+    <a href="#contacts" class="menu-item">Contacts</a>
+  </nav>
+  
     </header>
 
     <main>
@@ -148,7 +166,12 @@
                     </div>
 
                     <div class="about-body-text-2">
-                        I stumbled upon UX/UI design while searching for career paths that matched my artistic side, but I knew I didn’t want to paint or sculpt. Having already created digital art and photo edits, I wanted a path where I could combine creativity with technology. UX/UI design clicked instantly: I realized I could use my creativity to solve real-world problems.</div>
+                        I stumbled upon UX/UI design while searching for career paths that matched my artistic side, but I knew I didn’t want to paint or sculpt. Having already created digital art and photo edits, I wanted a path where I could combine creativity with technology. UX/UI design clicked instantly: I realized I could use my creativity to solve real-world problems.
+                    </div>
+
+                    <div class="about-body-text-3">
+                        I am currently studying UX/UI design at Tartu Vocational College, while also practicing and experimenting with graphic design. 
+                    </div>
                     </div>
                 </div>
             </div>

@@ -56,3 +56,4 @@ intersectionObserver.observe(document.querySelector(".opingud"))
 window.addEventListener("load", updateMenuOnScroll);
 window.addEventListener("scroll", updateMenuOnScroll);
 window.addEventListener("resize", updateMenuOnScroll);
+
