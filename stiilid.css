@@ -25,136 +25,67 @@ html, body {
     text-decoration: none; 
 }
 
-/*NAVIGATION MENU*/
+/* NAVIGATION MENU */
 
 a {
     text-decoration: none;
 }
 
+/* Header container */
 header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 478px;
-    height: 385px;
     z-index: 1000;
-    overflow: visible;
+    padding: 40px;
 }
 
+/* Horizontal menu layout */
 .menu {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 478px;
-    height: 385px;
-}
-
-/*home menu button*/
-.home-menu-item {
-    position: absolute;
-    top: 156px;
-    width: 132px;
-    height: 72px;
-}
-
-.home-menu-box {
-    width: 132px;
-    height: 72px;
-    display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
+    justify-content: flex-end; /* aligns to right */
+    gap: 60px;
 }
 
-.home-menu-rect {
-    width: 54px;
-    height: 72px;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
-}
-
-/*contact menu button*/
-.contacts-menu-item {
-    position: absolute;
-    left: 198px;
-    top: 0px;
-    width: 116px;
-    height: 122px;
-}
-
-.contacts-menu-box {
-    width: 116px;
-    height: 122px;
+/* Shared menu item styling */
+.menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     gap: 20px;
+    cursor: pointer;
 }
 
-.contacts-menu-rect {
-    width: 116px;
+/* Shared rectangle style (removes repetition) */
+.menu-rect {
     height: 72px;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
+    background:
+        linear-gradient(to bottom right, rgba(255,255,255,0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat,
+        linear-gradient(to bottom left, rgba(255,255,255,0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat,
+        linear-gradient(to top left, rgba(255,255,255,0.99) 0%, #000522 50%) top left / 50% 50% no-repeat,
+        linear-gradient(to top right, rgba(255,255,255,0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
 }
 
-/*work menu button*/
-.works-menu-item {
-    position: absolute;
-    top: 152px;
-    left: 393px;
-    width: 85px;
-    height: 122px;
-}
+/* Individual widths (kept your design proportions) */
+.home .menu-rect { width: 54px; }
+.contacts .menu-rect { width: 116px; }
+.works .menu-rect { width: 85px; }
+.about .menu-rect { width: 55px; }
 
-.works-menu-box {
-    width: 85px;
-    height: 122px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.works-menu-rect {
-    width: 85px;
-    height: 72px;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
-}
-
-/*about menu button*/
-.about-menu-item {
-    position: absolute;
-    top: 259px;
-    left: 198px;
-    width: 116px;
-    height: 126px;
-}
-
-.about-menu-box {
-    width: 116px;
-    height: 126px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.about-menu-rect {
-    width: 55px;
-    height: 76px;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.99) 0%, #000522 50%) top right / 50% 50% no-repeat;
-}
-
+/* Typography */
 .menu-text {
-    font-family: "Jetbrains Mono";
+    font-family: "JetBrains Mono", monospace;
     line-height: 150%;
     letter-spacing: 2%;
     font-weight: 100;
     color: #e7e7e7;
-    transition: color 0.1s ease;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.menu-item:hover .menu-text {
+    color: white;
 }
 
 .menu.menu-light .menu-text {
@@ -235,26 +166,10 @@ header {
     letter-spacing: 2%;
 }
 
-.section-gradient {
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(
-        to bottom,
-        #0C0C0D 0%,
-        #1b0b3f 10%,  
-        #2A0F7A 20%,
-        #3c14b8 30%,   
-        #4E19EB 40%,
-        #2f6fd1 55%,   
-        #00C8CC 70%,
-        #8fdfe0 85%,  
-        #DAD4EB 100%
-    );
-}
 
     #works {
     width: 100%;
-    background: #DAD4EB;
+    background: #e9e9e9;
     background-repeat: repeat;
     padding: 16rem 0;
 }
@@ -270,7 +185,7 @@ header {
     font-family: "Jetbrains Mono";
     font-size: 24px;
     margin-bottom: 6rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #000000;
     text-align: center;
 }
@@ -415,7 +330,7 @@ header {
     align-items: center;
     width: 100%;
     height: 30rem;
-    background-image: url('pildid/starry\ sky.gif');
+    background: #121212;
     color: #e7e7e7;
 }
 
@@ -427,8 +342,9 @@ header {
 }
 
 .contacts-heading {
-    font-family: 'Caprice';
-    font-size: 64px;
+    font-family: 'Jetbrains Mono';
+    font-size: 36px;
+    font-weight: 500;
 }
 
 .socials-content {

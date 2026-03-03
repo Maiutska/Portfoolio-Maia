@@ -6,9 +6,9 @@ body {
   font-size: 18px;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: #111010;
-  color: #000000;
-  font-family: "Times New Roman", Times, serif;
+  background-color: #e9e9e9;
+  color: #e6e5ed;
+  font-family: "Jetbrains Mono";
 }
 
 .case-layout {
@@ -23,12 +23,12 @@ body {
   position: relative;
   max-width: 880px;
   width: 100%;
-  background-color: #000000;
+  background-color: #f5f0f0;
   border-radius: 0;
   padding: 3.5rem 3rem 2.75rem;
   border: 1px solid #3a3a3a;
   white-space: normal;
-  color: #e5e5e5;
+  color: #000000;
   text-align: left;
   overflow: hidden;
 }
@@ -58,7 +58,7 @@ h1 {
   font-size: 1rem;
   line-height: 150%;
   letter-spacing: 2%;
-  color: #d0d0d0;
+  color: #000000;
 }
 
 .case-section {
@@ -88,7 +88,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 700;
-  color: #f5f5f5;
+  color: #000000;
   font-family: "Source Code Pro", monospace;
 }
 
@@ -97,7 +97,7 @@ h1 {
   font-size: 1rem;
   line-height: 150%;
   letter-spacing: 2%;
-  color: #d0d0d0;
+  color: #000000;
 }
 
 .case-section ul {
@@ -113,7 +113,7 @@ h1 {
   padding: 0.15rem 0;
   line-height: 150%;
   letter-spacing: 2%;
-  color: #e5e5e5;
+  color: #000000;
 }
 
 .before-img,
