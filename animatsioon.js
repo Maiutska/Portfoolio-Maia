@@ -1,7 +1,7 @@
 const menu = document.querySelector(".menu");
-const menuHeight = 385; // height of your fixed header
+const menuHeight = 150; 
 
-// Define sections and their desired menu text color
+
 const sections = [
   { el: document.querySelector("#home"), color: "light" },
   { el: document.querySelector("#works"), color: "dark" },
@@ -15,12 +15,12 @@ function updateMenuOnScroll() {
   for (let i = sections.length - 1; i >= 0; i--) {
     const sec = sections[i];
 
-    // Calculate top and bottom using getBoundingClientRect relative to viewport
+    
     const rect = sec.el.getBoundingClientRect();
-    const offsetTop = rect.top + scrollY; // element top relative to document
+    const offsetTop = rect.top + scrollY; 
     const offsetBottom = offsetTop + rect.height;
 
-    // Check if the top of the section has reached the menu
+    
     if (scrollY +   menuHeight >= offsetTop) {
       if (sec.color === "dark") {
         menu.classList.add("menu-dark");
@@ -49,7 +49,6 @@ const intersectionObserver = new IntersectionObserver((entries) => {
 })
 
 intersectionObserver.observe(document.querySelector("#about"));
-intersectionObserver.observe(document.querySelector(".opingud"))
 
 // Run on load, scroll, resize
 window.addEventListener("load", updateMenuOnScroll);
