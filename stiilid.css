@@ -165,9 +165,10 @@ header {
 
 .works-heading {
     font-family: "Jetbrains Mono";
+    font-weight: 700;
     font-size: 24px;
     margin-bottom: 6rem;
-    font-weight: 500;
+    font-weight: 700;
     color: #000000;
     text-align: center;
 }
@@ -228,7 +229,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: rgba(233, 231, 255, 0.99);
+    background: #d7e4fdfc;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
