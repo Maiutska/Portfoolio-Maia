@@ -94,7 +94,7 @@ header {
 
 #home {
     width: 100%;              
-    height: 100vh;                   
+    height: 120vh;                   
     margin: 0 auto;           
     background: #daef42;
     background-size: cover;
@@ -109,7 +109,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
 }
 
 .home-text-1 {
@@ -242,7 +241,7 @@ header {
     align-items: flex-start;
     gap: 8rem;                
     width: 60%;
-    margin: 15rem auto 25rem auto;
+    margin: 8rem auto 25rem auto;
     flex-wrap: nowrap;        
 }
 
@@ -326,7 +325,7 @@ header {
 
 .contacts-heading {
     font-family: 'Jetbrains Mono';
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -339,7 +338,7 @@ header {
 
 .email {
     font-family: "Jetbrains Mono";
-    font-size: 20px;
+    font-size: 18px;
     line-height: 150%;
     letter-spacing: 2%;
 }
@@ -359,7 +358,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 150%;
     letter-spacing: 2%;
     font-family: "Jetbrains Mono";
@@ -371,7 +370,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 150%;
     letter-spacing: 2%;
     font-family: "Jetbrains Mono";
