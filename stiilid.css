@@ -116,23 +116,20 @@ header {
     font-family: "Black";
     font-weight: 100;
     color: #000000;
-    line-height: 150%;
     letter-spacing: 4%;
     text-align: center;
 
 }
 
 .home-text-2 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "JetBrains Mono";
     font-weight: 100;
     color: #000000;
-    line-height: 150%;
     letter-spacing: 2%;
     text-align: center;
 
 }
-
 
 
 .home-img {
@@ -148,7 +145,7 @@ header {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background: #f8f6f6;
+    background-image: url('pildid/1000028150.jpg');
     background-repeat: repeat;
     justify-content: center;
     align-items: center;
@@ -163,13 +160,14 @@ header {
 }
 
 .works-heading {
-    font-family: "Jetbrains Mono";
-    font-weight: 700;
-    font-size: 24px;
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+    font-size: 20px;
     margin-bottom: 6rem;
-    font-weight: 700;
-    color: #000000;
-    text-align: center;
+    letter-spacing: 6%;
+    font-weight: 500;
+    color: #060606;
+    text-align: left;
 }
 
 .works-content-layout {
@@ -221,6 +219,7 @@ header {
   font-size: 18px;
   line-height: 1.4;
 }
+
 
 #about {
     width: 100%;
@@ -290,20 +289,9 @@ header {
     width: 193px;
     height: 391px;
     border: 1px solid rgb(0, 0, 0);
-}
-
-.myself2 {
-    width: 193px;
-    height: 234px;
-    background-image: url('pildid/myself2.svg');
-    background-repeat: no-repeat;
-}
-
-.starvector {
-    width: 195px;
-    height: 156px;
-    background-image: url('pildid/starvector.svg');
-    background-repeat: no-repeat;
+    background-image: url('pildid/Untitled_Artwork\ \(1\).webp');
+    background-position: center;
+    background-size: cover;
 }
 
 #contacts {
